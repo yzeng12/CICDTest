@@ -34,7 +34,7 @@ android {
         viewBinding true
     }
     signingConfigs {
-        Testrelease {
+        release {
             keyAlias 'key0'
             keyPassword '123123'
             storeFile file('C:\\Users\\yzeng\\AndroidStudioProjects\\CICDTest\\keystore\\testcicd.jks')
@@ -43,9 +43,9 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             shrinkResources true
-            signingConfig signingConfigs.Testrelease
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
