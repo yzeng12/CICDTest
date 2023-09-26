@@ -37,7 +37,7 @@ android {
         release {
             keyAlias 'key0'
             keyPassword '123123'
-            storeFile file('C:\\Users\\yzeng\\AndroidStudioProjects\\CICDTest\\keystore\\testcicd.jks')
+            storeFile file('keystore/testcicd.jks')
             storePassword '123123'
         }
     }
